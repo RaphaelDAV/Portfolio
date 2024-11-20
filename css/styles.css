@@ -27,6 +27,7 @@ nav {
     z-index: 10;
     animation: slideIn 0.5s ease; 
     position: fixed;
+    align-items: center;
     
 }
 
@@ -60,8 +61,9 @@ nav ul li a:hover {
 }
 
 nav .contact-button a {
-    padding: 3px 40px;
+    padding: 3px calc(15px + 2vw);
     padding-top: 6px;
+    margin-bottom: -6px;
     background-color: #153B4B;
     color: white;
     text-decoration: none;
@@ -70,7 +72,7 @@ nav .contact-button a {
     border-color: white;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: calc(15px + 1vw);
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
@@ -83,7 +85,6 @@ nav .socials {
     display: flex;
     justify-content: left;
     gap: 20px;
-    margin-bottom: 10px;
 }
 
 nav .socials a img {
@@ -97,15 +98,21 @@ nav .socials a img:hover {
 }
 
 .burger-menu {
+    margin: 0;
     text-align: center;
     display: none;
     font-size: 30px;
     background: none;
     border: none;
     cursor: pointer;
+    line-height: 0;
   }
   
   @media (max-width: 800px) {
+    nav{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .nav-links {
       font-size: calc(5px + 1vw);
       display: none;
@@ -229,7 +236,7 @@ nav .socials a img:hover {
     padding-top: 0.4vw;
     background-color: #153B4B;
     color: white;
-    font-size: 30px;
+    font-size: calc(15px + 1vw);
     border-radius: 100px;
     text-decoration: none;
     font-family: "Bebas Neue", sans-serif;
@@ -261,7 +268,7 @@ nav .socials a img:hover {
     margin: 5px 0;
     font-family: "Bebas Neue", sans-serif;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: calc(15px + 1vw);
 }
 
 .info .contact-info a {
