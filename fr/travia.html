@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVIA</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/projet.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            
+        </ul>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <script>
+			function toggleMenu() {
+				const navLinks = document.querySelector('.nav-links');
+				navLinks.classList.toggle('show');
+
+				if (navLinks.classList.contains('show')) {
+					document.addEventListener('click', closeMenuOnClickOutside);
+				} else {
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+			function closeMenuOnClickOutside(event) {
+				const navLinks = document.querySelector('.nav-links');
+				const burgerMenu = document.querySelector('.burger-menu');
+
+				if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+					navLinks.classList.remove('show');
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+		</script>
+    </nav>
+    <section class="projet-description">
+        <section class="intro" id="travia">
+            <h1>TRAVIA</h1>
+            <p>Plateforme de trajet interplanétaire</p>
+        </section>
+    
+        <section class="techno_lien">
+                <div class="techno">
+                    <h2>TECHNOLOGIES</h2>           
+                    <ul>HTML | CSS</ul>
+                    <ul>PHP | MYSQL</ul>    
+                    <ul>JavaScript</ul>    
+                </div>
+                <div class="lien">
+                    <h2>LIEN</h2>
+                    <a href="https://github.com/RaphaelDAV/Travia">Site web</a>
+                </div>    
+                <img class="logo" src="../assets/logo4.png">    
+        </section>
+    
+        <section class="description">
+            <h1>Présentation du projet</h1>
+            <p>
+                Le projet TRAVIA propose une plateforme innovante pour réserver des trajets intergalactiques, s'inscrivant dans l'univers de Star Wars . Cette application web s’adresse à des voyageurs galactiques fictifs et offre une expérience immersive dans un univers riche en planètes, factions et restrictions impériales. L'objectif est de modéliser un système de transport galactique efficace tout en respectant les contraintes de cet univers. Ce projet met à l'épreuve les compétences des étudiants en développement web full-stack et en conception d’expériences utilisateur (UX/UI), à travers des fonctionnalités complexes comme la recherche d'itinéraires optimaux et l'intégration de cartes interactives.
+                <br><br>
+                    L'application propose une interface ergonomique et responsive, où les utilisateurs peuvent rechercher, visualiser et réserver leurs trajets entre les planètes. Les fonctionnalités incluent la gestion des correspondances, la visualisation des coûts et des contraintes liées à l’Empire. Une attention particulière est portée à la sécurité des données et à la conformité RGPD, renforçant la crédibilité et la professionnalité du projet.
+                <br><br>
+                TRAVIA reflète également une approche créative et collaborative, avec une méthodologie Agile favorisant la répartition des tâches et l'itération continue. Chaque membre de l’équipe a contribué à des fonctionnalités spécifiques, comme la conception du moteur de recherche, des pages de commande, et de gestion des trajets passés et futurs.
+            </p>
+        </section>
+    
+        <div class="slideshow">
+            <img id="mainImage" src="../assets/travia/travia1.png" alt="Image principale">
+        </div>
+    
+        <div class="thumbnails">
+            <img src="../assets/travia/travia1.png" alt="Image 1" onclick="changeImage(this.src)">
+            <img src="../assets/travia/travia2.png" alt="Image 2" onclick="changeImage(this.src)">
+            <img src="../assets/travia/travia3.png" alt="Image 3" onclick="changeImage(this.src)">
+            <img src="../assets/travia/travia4.png" alt="Image 4" onclick="changeImage(this.src)">
+            <img src="../assets/travia/travia5.png" alt="Image 5" onclick="changeImage(this.src)">
+        </div>
+    
+        <script>
+            function changeImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
+    
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+    
+            const selectedThumbnail = Array.from(thumbnails).find(thumbnail => thumbnail.src === src);
+            selectedThumbnail.classList.add('active');
+        }
+    
+        </script>
+    </section>
+    
+
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+            </ul>
+
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2024</p> </div>
+    </footer>
+
+</body>
+</html>

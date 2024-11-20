@@ -35,6 +35,15 @@ body {
 #unesco{
     background-image: url('../assets/unesco.png'); 
 }
+
+#bif{
+    background-image: url(../assets/bif.png);
+}
+
+#travia{
+    background-image: url('../assets/travia.png'); 
+}
+
 .intro h1{
     padding-top: 100px;
     margin-left: 15%;
@@ -71,6 +80,8 @@ body {
     justify-content: center;
     gap: 10px; 
     margin-bottom: 5%;
+    
+    
 }
 
 .thumbnails img {
@@ -80,6 +91,7 @@ body {
     border: 2px solid transparent; 
     transition: border-color 0.3s;
     object-fit: contain;
+    
 }
 
 .thumbnails img:hover {
@@ -115,6 +127,11 @@ body {
 }
 
 @media (max-width: 1000px) {
+
+    .thumbnails{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .thumbnails img {
         width: 20vw; 
         height: 12vw;
@@ -122,6 +139,7 @@ body {
         border: 2px solid transparent; 
         transition: border-color 0.3s;
         object-fit: contain;
+        
     }
 
     .slideshow img {
@@ -139,7 +157,6 @@ body {
     flex-direction: row;
     gap: 30%;
     justify-content: center;
-    min-height: 100px;
     margin: 2%;
 }
 
@@ -186,7 +203,6 @@ body {
 @media (max-width: 600px) {
     .techno_lien{
         display: flex;
-        flex-direction: column;
         gap: 20px;
     }
 }
