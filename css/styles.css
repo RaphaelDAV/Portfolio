@@ -881,6 +881,7 @@ section.presentation {
 }
 
 .right-projet img.logo {
+    border-radius: 60px;
     max-width: 200px;
     width: 40vw;
     height: auto;
