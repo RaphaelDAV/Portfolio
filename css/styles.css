@@ -688,12 +688,20 @@ section.presentation {
 }
 
 @media (max-width: 668px) {
+    .language-item{
+        margin-bottom: 0;
+    }
     .language-flex {
         flex-direction: column; 
         align-items: flex-end;
+        gap: 5px
     }
     .experiences{
         margin-bottom: -10%;
+    }
+
+    .experiences-line{
+        gap: 5px;
     }
 
     
@@ -841,6 +849,7 @@ section.presentation {
     font-size: calc(10px + 1vw);
     margin: 5px;
     font-family: "Montserrat", sans-serif;
+    text-align: justify;
 }
 
 .left-projet button {
@@ -854,6 +863,7 @@ section.presentation {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     margin: 5px;
+    white-space: nowrap;
 }
 
 .left-projet button:hover {
@@ -948,6 +958,14 @@ section.presentation {
 
     .left-projet{
         padding-top: 40px;
+    }
+
+    .projet{
+        width: 100%;
+    }
+
+    .small-flex{
+        width: 100%;
     }
     
 }
