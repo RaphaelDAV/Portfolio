@@ -110,8 +110,8 @@ nav .socials a img:hover {
   
   @media (max-width: 800px) {
     nav{
-        padding-right: 10px;
-        padding-left: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
     }
     .nav-links {
       font-size: calc(5px + 1vw);
@@ -120,18 +120,17 @@ nav .socials a img:hover {
       position: absolute;
       top: 100px;
       right: 20px;
-      background-color: #153B4B;
+      background-color: rgba(21, 59, 75,0.8 );
       padding: 10px;
-      padding-bottom: 0px;
       border-radius: 5px;
-      font-size: 30px;
+      font-size: calc(15px + 1vw);
     }
   
     .nav-separator{
         display: none;
     }
     .nav-links li {
-      margin: 10px 0;
+      margin: 0;
     }
   
     .separator {
@@ -301,6 +300,8 @@ section.presentation {
     height: 20vw;
     padding-right: 5%;
     z-index: 1;
+    min-height: 200px;
+    min-width: 200px;
 }
 
 .profile-image::before {
@@ -362,7 +363,7 @@ section.presentation {
 }
 
 .profile-details p {
-    font-size: 1.5rem;
+    font-size: calc(15px + 1vw);
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
     padding: 5%;
@@ -435,6 +436,9 @@ section.presentation {
     background-color: #FDF7F2;
 }
 
+.skills{
+    margin-right: 5%;
+}
 .skills h2 {
     font-family: "Bebas Neue", sans-serif;
     font-size: 2.5rem;
@@ -550,9 +554,12 @@ section.presentation {
 
 /*___________________________Compétences____________________*/ 
 .skills-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
     justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 .skill-item {
@@ -571,7 +578,7 @@ section.presentation {
 
 .skill-item a {
     display: block;
-    font-size: 1.2rem;
+    font-size: calc(10px + 1vw);
     margin-top: 10px;
     text-decoration: none;
     color: #B6410F;
@@ -585,8 +592,24 @@ section.presentation {
     color: #153B4B;
 }
 
+@media (max-width: 800px) {
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .skill-item{
+        width: calc(10px + 1vw);
+    }
+    .skill-item img{
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
 .language-item p {
-    font-size: 2vw;
+    font-size: calc(15px + 1vw);
     font-family: "Montserrat", sans-serif;
     color:#B6410F;
     
@@ -631,28 +654,16 @@ section.presentation {
     margin-bottom: -2%;
     margin-top: 0%;
     width: 50%;
+    overflow: hidden;
 }
 
 .experiences p{
     color:#FDF7F2;
     font-family: "Montserrat", sans-serif;
-    font-size:calc(15px + 1vw);
+    font-size:calc(10px + 1vw);
 }
 
-@media (max-width: 668px) {
-    .language-flex {
-        flex-direction: column; 
-        align-items: flex-end;
-    }
-    .experiences{
-        margin-bottom: -10%;
-    }
 
-    .skill-item img {
-        width: 50px;
-        height: 50px;
-    }
-}
 
 
 .experiences h2{
@@ -673,18 +684,31 @@ section.presentation {
 }
 
 .experiences span{
-    font-size:calc(15px + 2vw);
+    font-size:calc(10px + 2vw);
 }
 
+@media (max-width: 668px) {
+    .language-flex {
+        flex-direction: column; 
+        align-items: flex-end;
+    }
+    .experiences{
+        margin-bottom: -10%;
+    }
+
+    
+}
 
 
 .big-flex{
     display: flex;
     margin-top: 5vw;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .skills h2{
-    font-size: 5vw;
+    font-size: calc(15px + 2vw);
 }
 
 .skills h2, .education h2 {
@@ -741,6 +765,7 @@ section.presentation {
     font-size: calc(15px + 1vw);
     text-transform: uppercase;
     margin: 50px;
+    white-space: nowrap;
 }
 
 
@@ -919,6 +944,10 @@ section.presentation {
     .left-projet h3 {
         line-height: 1;
         white-space:inherit;
+    }
+
+    .left-projet{
+        padding-top: 40px;
     }
     
 }
