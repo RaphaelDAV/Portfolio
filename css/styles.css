@@ -296,8 +296,8 @@ section.presentation {
     position: relative;
     margin: 5vw;    
     background-color: #FDF7F2;
-    width: 20vw;
-    height: 20vw;
+    width: 10vw;
+    height: 10vw;
     padding-right: 5%;
     z-index: 1;
     min-height: 200px;
@@ -931,9 +931,7 @@ section.presentation {
     background-image: url('../assets/bif.png'); 
 }
 
-#travia::before{
-    background-image: url('../assets/travia.png'); 
-}
+
 
 .small-flex{
     display: flex;
