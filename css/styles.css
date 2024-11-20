@@ -734,6 +734,7 @@ section.presentation {
     display: flex;
     flex-direction: column;
     margin-bottom: 10%;
+    overflow: hidden;
 }
 
 .portfolio-section h1 {
@@ -770,7 +771,7 @@ section.presentation {
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: calc(15px + 1vw);
+    font-size: calc(10px + 1vw);
     text-transform: uppercase;
     margin: 50px;
     white-space: nowrap;
@@ -957,6 +958,7 @@ section.presentation {
     }
 
     .left-projet{
+        padding: 1vw;
         padding-top: 40px;
     }
 
@@ -968,6 +970,9 @@ section.presentation {
         width: 100%;
     }
     
+    .portfolio-nav ul{
+        margin: 0;
+    }
 }
 
 /*_______________Footer_____________*/
@@ -1003,6 +1008,12 @@ footer {
 .footer-links li {
     display: inline;
     margin: 0 10px;
+}
+@media (max-width: 668px) {
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .footer-links a {
