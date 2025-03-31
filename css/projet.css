@@ -44,6 +44,17 @@ body {
     background-image: url('../assets/travia.png'); 
 }
 
+#snchess{
+    background-image: url('../assets/snchess.png'); 
+    color: black;
+}
+
+#graphes{
+    background-image: url('../assets/graphe.png'); 
+}
+
+
+
 .intro h1{
     padding-top: 100px;
     margin-left: 15%;
@@ -198,6 +209,7 @@ body {
 .logo{
     height: calc(50px + 5vw);
     width: calc(50px + 5vw);
+    border-radius: 20px;
 }
 
 @media (max-width: 600px) {

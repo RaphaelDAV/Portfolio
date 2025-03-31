@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVIA</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contact.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Accueil</a></li>
+            
+        </ul>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <script>
+			function toggleMenu() {
+				const navLinks = document.querySelector('.nav-links');
+				navLinks.classList.toggle('show');
+
+				if (navLinks.classList.contains('show')) {
+					document.addEventListener('click', closeMenuOnClickOutside);
+				} else {
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+			function closeMenuOnClickOutside(event) {
+				const navLinks = document.querySelector('.nav-links');
+				const burgerMenu = document.querySelector('.burger-menu');
+
+				if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+					navLinks.classList.remove('show');
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+		</script>
+    </nav>
+
+    <section class="form-section">
+        <div class="title">
+            <div class="center_title">
+                <h1>CONTACTEZ</h1>
+                <div class="title-flex">
+                    <p>MOI</p>
+                    <div class="title-bar"></div>
+                </div>
+            </div>
+                
+        </div>
+        <div class="form">
+            <h1>FORMULAIRE DE CONTACT</h1>
+            <input type="text" placeholder="Entrez votre nom">
+            <input type="email" placeholder="Entrez une adresse email valide">
+            <textarea placeholder="Entrez votre message"></textarea>
+            <button type="submit">ENVOYER</button>
+        </div>
+    </section>
+
+    <section class="link-section">
+        <h2>MES RÉSEAUX</h2>
+        <h1>VOUS POUVEZ ME TROUVER ICI</h1>
+        <div class="separator-bar"></div>
+        <div class="link-flex">
+            <div class="link">
+                <img src="../assets/contact/phone.png" alt="téléphone">
+                <h3>Téléphone</h3>
+                <a href="tel:+33769817638"><p>07 69 81 76 38 ➔</p></a>
+            </div>
+
+            <div class="link">
+                <img src="../assets/contact/mail.png" alt="email">
+                <h3>Email</h3>
+                <a href="mailto:daviotraphael@gmail.com"><p>daviotraphael@gmail.com ➔</p></a>
+            </div>
+
+            <div class="link">
+                <img src="../assets/contact/github.png" alt="GitHub">
+                <h3>GitHub</h3>
+                <a href="https://github.com/RaphaelDAV"><p>RaphaelDAV ➔</p></a>
+            </div>
+
+            <div class="link">
+                <img src="../assets/contact/linkedin.png" alt="LinkedIn">
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/in/raphael-daviot/"><p>raphael-daviot ➔</p></a>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../index.html#portfolio">Portfolio</a></li>
+            </ul>
+
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2024</p> </div>
+    </footer>
+
+</body>
+</html>

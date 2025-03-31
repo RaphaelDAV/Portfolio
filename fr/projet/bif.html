@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIF</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projet.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            
+        </ul>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <script>
+			function toggleMenu() {
+				const navLinks = document.querySelector('.nav-links');
+				navLinks.classList.toggle('show');
+
+				if (navLinks.classList.contains('show')) {
+					document.addEventListener('click', closeMenuOnClickOutside);
+				} else {
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+			function closeMenuOnClickOutside(event) {
+				const navLinks = document.querySelector('.nav-links');
+				const burgerMenu = document.querySelector('.burger-menu');
+
+				if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+					navLinks.classList.remove('show');
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+		</script>
+    </nav>
+    <section class="projet-description">
+        <section class="intro" id="bif">
+            <h1>B.I.F</h1>
+            <p>Adaptation du jeu de société en Java</p>
+        </section>
+    
+        <section class="techno_lien">
+                <div class="techno">
+                    <h2>TECHNOLOGIES</h2>           
+                    <ul>HTML | CSS</ul>
+                    <ul>PHP | MYSQL</ul>       
+                </div>
+                <div class="lien">
+                    <h2>LIEN</h2>
+                    <a href="https://github.com/RaphaelDAV/BIF">Site web</a>
+                </div>    
+                <img class="logo" src="../../assets/logo4.png">    
+        </section>
+    
+        <section class="description">
+            <h1>Présentation du projet</h1>
+            <p>Dans le cadre de notre formation, nous avons participé à un projet ambitieux visant à développer un portail Web et un entrepôt de données pour une banque. 
+                <br> <br> 
+                Ce projet s’inscrit dans une approche Agile, avec un rôle attribué à chaque membre de l’équipe de 5 personnes, incluant Scrum Master, Technical Leader et Développeurs/Testeurs. Notre mission consistait à créer une solution permettant aux clients professionnels (e-commerce, commerçants, artisans) d’accéder facilement à leurs données monétiques. Le portail offre des fonctionnalités variées : consultation en temps réel, génération de rapports au format CSV/XLS, édition d’états en PDF et extraction de données. 
+                <br> <br> 
+                Nous avons conçu l’application en suivant une méthodologie Agile, avec une forte collaboration entre les rôles. Chaque membre a contribué à des livrables spécifiques, notamment le dossier de conception technique, le développement des fonctionnalités principales, et les tests logiciels. L’architecture technique intègre une base de données relationnelle optimisée pour la manipulation des informations monétiques, et une interface utilisateur intuitive pour une expérience fluide. Le travail en équipe a été renforcé par des réunions quotidiennes (daily meetings) et des sessions de brainstorming pour résoudre efficacement les problèmes rencontrés.</p>
+        </section>
+    
+        <div class="slideshow">
+            <img id="mainImage" src="../../assets/bif/bif1.png" alt="Image principale">
+        </div>
+    
+        <div class="thumbnails">
+            <img src="../../assets/bif/bif1.png" alt="Image 1" onclick="changeImage(this.src)">
+            <img src="../../assets/bif/bif2.png" alt="Image 2" onclick="changeImage(this.src)">
+            <img src="../../assets/bif/bif3.png" alt="Image 3" onclick="changeImage(this.src)">
+            <img src="../../assets/bif/bif4.png" alt="Image 4" onclick="changeImage(this.src)">
+            <img src="../../assets/bif/bif5.png" alt="Image 5" onclick="changeImage(this.src)">
+        </div>
+    
+        <script>
+            function changeImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
+    
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+    
+            const selectedThumbnail = Array.from(thumbnails).find(thumbnail => thumbnail.src === src);
+            selectedThumbnail.classList.add('active');
+        }
+    
+        </script>
+    </section>
+    
+
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li>
+            </ul>
+
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2024</p> </div>
+    </footer>
+
+</body>
+</html>

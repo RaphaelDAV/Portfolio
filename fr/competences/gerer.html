@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence Gérer - Raphael DAVIOT</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/competence.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar (identique à celle de la page principale) -->
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+        </ul>
+        <div class="contact-button">
+            <a href="../../fr/contact.html">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- En-tête de la compétence -->
+    <header class="competence-header gerer-header">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>GÉRER</h1>
+            <h2>Administrer les données de l'entreprise</h2>
+        </div>
+    </header>
+
+    <!-- Description de la compétence -->
+    <section class="competence-description">
+        <div class="container">
+            <h2>Qu'est-ce que la compétence "Gérer" ?</h2>
+            <p>La compétence "Gérer" consiste à <strong>concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre à disposition toutes les informations pour un bon pilotage de l'entreprise</strong>.</p>
+            
+            <div class="competence-details">
+                <div class="detail-item">
+                    <h3>Pourquoi cette compétence est-elle importante ?</h3>
+                    <p>Cette compétence est fondamentale car les données sont désormais un actif stratégique pour les entreprises. Leur bonne gestion permet d'améliorer la prise de décision, d'optimiser les processus métier et de créer de la valeur ajoutée. Une mauvaise gestion des données peut en revanche entraîner des risques importants (sécurité, conformité, qualité).</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Quelles sont les aptitudes développées ?</h3>
+                    <ul>
+                        <li><strong>Modélisation</strong> : Concevoir des modèles de données adaptés aux besoins métier</li>
+                        <li><strong>Administration</strong> : Gérer les bases de données et assurer leur disponibilité</li>
+                        <li><strong>Sécurité</strong> : Protéger les données sensibles et respecter les réglementations</li>
+                        <li><strong>Analyse</strong> : Transformer les données brutes en informations exploitables</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apprentissages et compétences techniques -->
+    <section class="competence-skills">
+        <div class="container">
+            <h2>Apprentissages et compétences techniques</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technologies de bases de données</h3>
+                    <ul>
+                        <li>SQL (MySQL, PostgreSQL)</li>
+                        <li>Bases de données NoSQL (MongoDB)</li>
+                        <li>Modélisation relationnelle</li>
+                        <li>Normalisation des données</li>
+                        <li>Administration de SGBD</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Outils et environnements</h3>
+                    <ul>
+                        <li>Outils de visualisation de données</li>
+                        <li>Requêtage de données</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Méthodologies</h3>
+                    <ul>
+                        <li>Gouvernance des données</li>
+                        <li>Gestion du cycle de vie des données</li>
+                        <li>Conformité RGPD</li>
+                        <li>Qualité et intégrité des données</li>
+                        <li>Documentation des modèles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets associés -->
+    <section class="competence-projects">
+        <div class="container">
+            <h2>Projets mettant en œuvre cette compétence</h2>
+            
+            <div class="projects-grid">
+                
+                <div class="projet" id="bif" data-category="web-development">
+                    <div class="left-projet">
+                        <h3>GESTIONNAIRE PAIEMENT CB</h3>
+                        <p>Site de gestion de comptes bancaires</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Conception et modélisation d'une base de données relationnelle</li>
+                                <li>Sécurisation des données sensibles</li>
+                                <li>Mise en place d'un système de journalisation des transactions</li>
+                                <li>Gestion des droits d'accès utilisateurs</li>
+                            </ul>
+                        <a href="../../fr/projet/bif.html"><button>VOIR PLUS ></button></a>
+                    </div>
+                    <div class="right-projet">
+                        <img class="logo" src="../../assets/logo4.png">
+                    </div>
+                </div>
+        
+                <div class="projet" id="travia" data-category="web-development">
+                    <div class="left-projet">
+                        <h3>TRAVIA</h3>
+                        <p>Plateforme de trajet interplanétaire</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Conception d'une base de données pour un système complexe</li>
+                                <li>Gestion de données géographiques et temporelles</li>
+                                <li>Mise en place d'un système de recherche optimisé</li>
+                                <li>Intégration de données provenant de différentes sources</li>
+                            </ul>
+                        <a href="../../fr/projet/travia.html"><button>VOIR PLUS ></button></a>
+                    </div>
+                    <div class="right-projet">
+                        <img class="logo" src="../../assets/logo5.png">
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignage ou réflexion personnelle -->
+    <section class="competence-reflection">
+        <div class="container">
+            <h2>Ma réflexion personnelle</h2>
+            <div class="reflection-content">
+                <p>La compétence "Gérer" représente pour moi un pilier essentiel de l'informatique moderne. À l'ère du Big Data et de la transformation numérique, la capacité à organiser, sécuriser et valoriser les données constitue un enjeu stratégique majeur pour toute organisation.</p>
+                <p>J'ai particulièrement apprécié travailler sur le projet "Gestionnaire Paiement CB" qui m'a permis de mettre en pratique mes connaissances en modélisation de données dans un contexte où la sécurité et l'intégrité sont primordiales. Ce projet m'a fait prendre conscience de l'importance d'une bonne conception en amont pour éviter les problèmes futurs.</p>
+                <p>Dans ma progression, j'ai pu constater que la gestion des données ne se limite pas aux aspects techniques, mais englobe également des considérations légales, organisationnelles et éthiques. J'ai été également interessé par des réglementations comme le RGPD et à leur impact sur l'architecture des systèmes d'information.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Évaluation et progression -->
+    <section class="competence-evaluation">
+        <div class="container">
+            <h2>Évaluation et progression</h2>
+            
+            <div class="evaluation-content">
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Niveau de maîtrise</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 80%;"></div>
+                    </div>
+                </div>
+                
+                <div class="evaluation-details">
+                    <p>Ma progression dans cette compétence s'est construite à travers plusieurs projets académiques et personnels :</p>
+                    <ul>
+                        <li>Semestre 1 : Initiation aux bases de données relationnelles</li>
+                        <li>Semestre 2 : Approfondissement du langage SQL et conception de schémas</li>
+                        <li>Semestre 3 : Administration de bases de données et optimisation</li>
+                        <li>Semestre 4 : Projets intégrateurs avec focus sur la qualité et la sécurité des données</li>
+                    </ul>
+                    <p>Axes d'amélioration :</p>
+                    <ul>
+                        <li>Explorer davantage les technologies NoSQL pour les données non structurées</li>
+                        <li>Développer mes compétences en data science et analyse de données</li>
+                        <li>Approfondir mes connaissances sur les architectures de données distribuées</li>
+                        <li>Me former aux problématiques de gouvernance des données en entreprise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à celui de la page principale) -->
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+            </ul>
+    
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2025</p> </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+
+            if (navLinks.classList.contains('show')) {
+                document.addEventListener('click', closeMenuOnClickOutside);
+            } else {
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+
+        function closeMenuOnClickOutside(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const burgerMenu = document.querySelector('.burger-menu');
+
+            if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+                navLinks.classList.remove('show');
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+    </script>
+</body>
+</html>

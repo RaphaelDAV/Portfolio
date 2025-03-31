@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence Administrer - Raphael DAVIOT</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/competence.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar (identique à celle de la page principale) -->
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+        </ul>
+        <div class="contact-button">
+            <a href="../../fr/contact.html">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- En-tête de la compétence -->
+    <header class="competence-header administrer-header">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>ADMINISTRER</h1>
+            <h2>Gérer les infrastructures et réseaux</h2>
+        </div>
+    </header>
+
+    <!-- Description de la compétence -->
+    <section class="competence-description">
+        <div class="container">
+            <h2>Qu'est-ce que la compétence "Administrer" ?</h2>
+            <p>La compétence "Administrer" est essentielle pour assurer le bon fonctionnement des systèmes informatiques. Elle consiste à <strong>installer, configurer, mettre à disposition, maintenir en conditions opérationnelles des infrastructures, des services et des réseaux et optimiser le système informatique d'une organisation</strong>.</p>
+            
+            <div class="competence-details">
+                <div class="detail-item">
+                    <h3>Pourquoi cette compétence est-elle importante ?</h3>
+                    <p>Cette compétence est fondamentale car elle garantit la disponibilité, la sécurité et la performance des systèmes informatiques. Elle permet aux utilisateurs de travailler efficacement en assurant que l'infrastructure technique répond aux besoins de l'organisation et respecte les normes de sécurité en vigueur.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Quelles sont les aptitudes développées ?</h3>
+                    <ul>
+                        <li><strong>Administration système</strong> : Installer et configurer des systèmes d'exploitation</li>
+                        <li><strong>Administration réseau</strong> : Configurer des infrastructures réseau</li>
+                        <li><strong>Sécurité</strong> : Implémenter des politiques de sécurité et surveiller les systèmes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apprentissages et compétences techniques -->
+    <section class="competence-skills">
+        <div class="container">
+            <h2>Apprentissages et compétences techniques</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Systèmes et réseaux</h3>
+                    <ul>
+                        <li>Protocoles réseau (TCP/IP, DNS, DHCP)</li>
+                        <li>Configuration de routeurs et commutateurs</li>
+                        <li>Architecture réseau et segmentation</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Sécurité et services</h3>
+                    <ul>
+                        <li>Pare-feu et VPN</li>
+                        <li>Services web (Apache)</li>
+                        <li>Services de messagerie</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Outils et méthodologies</h3>
+                    <ul>
+                        <li>Analyse de trame (Wireshark)</li>
+                        <li>Virtualisation (Netkit)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets associés -->
+    <section class="competence-projects">
+        <div class="container">
+            <h2>Projets mettant en œuvre cette compétence</h2>
+            
+            <div class="projects-grid">
+                
+                <div class="projet" id="infrastructure" data-category="application">
+                    <div class="left-projet">
+                        <h3>INFRASTRUCTURE RÉSEAU</h3>
+                        <p>Mise en place de pare-feu et translation d'adresse</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Réaliser un pare-feu sous Linux grâce à Netfilter</li>
+                                <li>Mettre en place une passerelle NAT</li>
+                                <li>Faire des adressages et routages IP</li>
+                                <li>Gérer les protocoles de la couche transport</li>
+                            </ul>
+                    </div>
+                    <div class="right-projet">
+                        <img class="logo" src="../../assets/logo8.png">
+                    </div>
+                </div>
+        
+                <div class="projet" id="dual" data-category="application">
+                    <div class="left-projet">
+                        <h3>PROJET DUAL BOOT</h3>
+                        <p>Déploiement et configuration d'un deuxième système d'exploitation</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Installation et configuration de Linux</li>
+                                <li>Gestion de disques</li>
+                                <li>Affilitation avec le BIOS</li>
+                            </ul>
+                    </div>
+                    <div class="right-projet">
+                        <img class="logo" src="../../assets/logo7.png">
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignage ou réflexion personnelle -->
+    <section class="competence-reflection">
+        <div class="container">
+            <h2>Ma réflexion personnelle</h2>
+            <div class="reflection-content">
+                <p>La compétence "Administrer" m'a permis de comprendre l'importance d'une infrastructure solide et bien gérée pour soutenir toutes les autres activités informatiques. J'ai particulièrement apprécié l'aspect pratique de cette compétence, où chaque configuration et chaque décision a un impact direct sur la performance et la sécurité des systèmes.</p>
+                <p>Cette compétence m'a également ouvert les yeux sur l'importance de l'anticipation et de la maintenance préventive pour éviter les problèmes avant qu'ils ne surviennent. </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Évaluation et progression -->
+    <section class="competence-evaluation">
+        <div class="container">
+            <h2>Évaluation et progression</h2>
+            
+            <div class="evaluation-content">
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Niveau de maîtrise</span>
+                        <span>10%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 10%;"></div>
+                    </div>
+                </div>
+                
+                <div class="evaluation-details">
+                    <p>Ma progression dans cette compétence s'est construite à travers plusieurs projets et cours :</p>
+                    <ul>
+                        <li>Semestre 1 : Introduction aux bases des réseaux et système d'exploitation Linux</li>
+                        <li>Semestre 2 : Configuration de services réseaux</li>
+                        <li>Semestre 3 : Mise en place d'infrastructures</li>
+                        <li>Semestre 4 : Sécurisation avancée</li>
+                    </ul>
+                    <p>Axes d'amélioration :</p>
+                    <ul>
+                        <li>Développer mes connaissances en technologies cloud</li>
+                        <li>Développer mes compétences en Infrastructure</li>
+                        <li>Améliorer ma maîtrise des outils de conteneurisation</li>
+                        <li>Me former aux méthodologies DevOps</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à celui de la page principale) -->
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+            </ul>
+    
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2025</p> </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+
+            if (navLinks.classList.contains('show')) {
+                document.addEventListener('click', closeMenuOnClickOutside);
+            } else {
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+
+        function closeMenuOnClickOutside(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const burgerMenu = document.querySelector('.burger-menu');
+
+            if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+                navLinks.classList.remove('show');
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétence Optimiser - Raphael DAVIOT</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/competence.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar (identique à celle de la page principale) -->
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+            <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+        </ul>
+        <div class="contact-button">
+            <a href="../../fr/contact.html">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- En-tête de la compétence -->
+    <header class="competence-header optimiser-header">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>OPTIMISER</h1>
+            <h2>Proposer des applications informatiques optimisées</h2>
+        </div>
+    </header>
+
+    <!-- Description de la compétence -->
+    <section class="competence-description">
+        <div class="container">
+            <h2>Qu'est-ce que la compétence "Optimiser" ?</h2>
+            <p>La compétence "Optimiser" consiste à <strong>proposer des applications informatiques optimisées en fonction de critères spécifiques : temps d'exécution, précision, consommation de ressources</strong>. Cette compétence est essentielle pour développer des solutions performantes qui répondent efficacement aux besoins des utilisateurs.</p>
+            
+            <div class="competence-details">
+                <div class="detail-item">
+                    <h3>Pourquoi cette compétence est-elle importante ?</h3>
+                    <p>L'optimisation est fondamentale dans le développement logiciel car elle permet de créer des applications plus rapides, plus économes en ressources et plus réactives. Dans un contexte où les attentes des utilisateurs sont toujours plus élevées et où les contraintes techniques peuvent être importantes, la capacité à optimiser devient un avantage concurrentiel majeur.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Quelles sont les aptitudes développées ?</h3>
+                    <ul>
+                        <li><strong>Analyse de performance</strong> : Identifier les goulots d'étranglement et les points critiques</li>
+                        <li><strong>Optimisation algorithmique</strong> : Améliorer l'efficacité des algorithmes</li>
+                        <li><strong>Gestion de ressources</strong> : Minimiser l'utilisation de mémoire et de CPU</li>
+                        <li><strong>Refactoring</strong> : Restructurer le code sans en modifier le comportement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apprentissages et compétences techniques -->
+    <section class="competence-skills">
+        <div class="container">
+            <h2>Apprentissages et compétences techniques</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Techniques d'optimisation</h3>
+                    <ul>
+                        <li>Analyse de complexité algorithmique</li>
+                        <li>Optimisation des requêtes SQL</li>
+                        <li>Amélioration des structures de données</li>
+                        <li>Techniques de cache et de mise en mémoire</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Outils et méthodes</h3>
+                    <ul>
+                        <li>Métriques de performance</li>
+                        <li>Tests de charge</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Bonnes pratiques</h3>
+                    <ul>
+                        <li>Clean Code et refactoring</li>
+                        <li>Design patterns optimisés</li>
+                        <li>Documentation des optimisations</li>
+                        <li>Benchmarking et comparaisons</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets associés -->
+    <section class="competence-projects">
+        <div class="container">
+            <h2>Projets mettant en œuvre cette compétence</h2>
+            
+            <div class="projects-grid">
+                
+                <div class="projet" id="graphe" data-category="application">
+                    <div class="left-projet">
+                        <h3>MODÉLISATION GRAPHES</h3>
+                        <p>Optimisation d'algorithmes de graphes</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Optimisation d'algorithmes de parcours de graphes</li>
+                                <li>Amélioration des structures de données</li>
+                                <li>Réduction de la complexité temporelle</li>
+                                <li>Tests de performance et benchmarking</li>
+                            </ul>
+                        <a href="../../fr/projet/graphe.html"><button>VOIR PLUS ></button></a>
+                    </div>
+
+                </div>
+        
+                <div class="projet" id="travia" data-category="web-development">
+                    <div class="left-projet">
+                        <h3>TRAVIA</h3>
+                        <p>Optimisation d'application web de trajets interplanétaires</p>
+                        <h4>Compétences mises en œuvre :</h4>
+                            <ul>
+                                <li>Optimisation des requêtes SQL</li>
+                                <li>Mise en cache des données fréquemment accédées</li>
+                                <li>Amélioration des temps de chargement des pages</li>
+                                <li>Réduction de la consommation des ressources serveur</li>
+                            </ul>
+                        <a href="../../fr/projet/travia.html"><button>VOIR PLUS ></button></a>
+                    </div>
+                    <div class="right-projet">
+                        <img class="logo" src="../../assets/logo5.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Témoignage ou réflexion personnelle -->
+    <section class="competence-reflection">
+        <div class="container">
+            <h2>Ma réflexion personnelle</h2>
+            <div class="reflection-content">
+                <p>La compétence "Optimiser" a représenté pour moi un défi passionnant qui m'a permis de développer ma pensée analytique et ma rigueur. J'ai découvert que l'optimisation n'est pas seulement une question technique, mais aussi une approche systématique pour résoudre des problèmes complexes.</p>
+                <p>Le projet de modélisation de graphes a été particulièrement enrichissant car il m'a permis de mettre en pratique différentes techniques d'optimisation et de mesurer concrètement l'impact de mes améliorations sur les performances du système.</p>
+                <p>Cette compétence m'a également sensibilisé à l'importance de l'équilibre entre la lisibilité du code et sa performance. J'ai appris que l'optimisation prématurée peut parfois être contre-productive et qu'il est essentiel de baser ses décisions sur des mesures concrètes plutôt que sur des intuitions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Évaluation et progression -->
+    <section class="competence-evaluation">
+        <div class="container">
+            <h2>Évaluation et progression</h2>
+            
+            <div class="evaluation-content">
+                <div class="progress-container">
+                    <div class="progress-label">
+                        <span>Niveau de maîtrise</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-value" style="width: 50%;"></div>
+                    </div>
+                </div>
+                
+                <div class="evaluation-details">
+                    <p>Ma progression dans cette compétence s'est construite à travers plusieurs projets académiques et personnels :</p>
+                    <ul>
+                        <li>Semestre 1 : Sensibilisation aux problématiques de performance</li>
+                        <li>Semestre 2 : Initiation aux techniques d'optimisation algorithmique</li>
+                        <li>Semestre 3 : Application des techniques d'optimisation dans des projets concrets</li>
+                        <li>Semestre 4 : Approfondissement des méthodes d'analyse et de benchmarking</li>
+                    </ul>
+                    <p>Axes d'amélioration :</p>
+                    <ul>
+                        <li>Approfondir mes connaissances en optimisation de bases de données</li>
+                        <li>Développer mes compétences en analyse de performance d'applications mobiles</li>
+                        <li>Explorer les techniques d'optimisation pour les applications à forte charge</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identique à celui de la page principale) -->
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#competences-but">Compétences BUT</a></li>
+            </ul>
+    
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2025</p> </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
+
+            if (navLinks.classList.contains('show')) {
+                document.addEventListener('click', closeMenuOnClickOutside);
+            } else {
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+
+        function closeMenuOnClickOutside(event) {
+            const navLinks = document.querySelector('.nav-links');
+            const burgerMenu = document.querySelector('.burger-menu');
+
+            if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+                navLinks.classList.remove('show');
+                document.removeEventListener('click', closeMenuOnClickOutside);
+            }
+        }
+    </script>
+</body>
+</html>

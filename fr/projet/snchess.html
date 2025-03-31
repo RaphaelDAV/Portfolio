@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCN'Hess</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projet.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            
+        </ul>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <script>
+			function toggleMenu() {
+				const navLinks = document.querySelector('.nav-links');
+				navLinks.classList.toggle('show');
+
+				if (navLinks.classList.contains('show')) {
+					document.addEventListener('click', closeMenuOnClickOutside);
+				} else {
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+			function closeMenuOnClickOutside(event) {
+				const navLinks = document.querySelector('.nav-links');
+				const burgerMenu = document.querySelector('.burger-menu');
+
+				if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+					navLinks.classList.remove('show');
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+		</script>
+    </nav>
+    <section class="projet-description">
+        <section class="intro" id="snchess">
+            <h1>SCN'Hess</h1>
+            <p>Plateforme de réservation de billets de train TGV</p>
+        </section>
+    
+        <section class="techno_lien">
+                <div class="techno">
+                    <h2>TECHNOLOGIES</h2>           
+                    <ul>HTML/CSS</ul>
+                    <ul>JavaScript</ul>
+                    <ul>Node.js</ul>
+                    <ul>MySQL</ul>   
+                </div>
+                <div class="lien">
+                    <h2>LIEN</h2>
+                    <a href="https://github.com/RaphaelDAV/SNC-Hess">Github</a>
+                </div>    
+                <img class="logo" src="../../assets/logo6.png">    
+        </section>
+    
+        <section class="description">
+            <h1>Présentation du projet</h1>
+            <p>Le projet SCN'Hess représente une solution innovante pour la réservation de billets de train dans le contexte de l'ouverture à la concurrence du marché ferroviaire. Notre objectif était de créer une plateforme intuitive et performante permettant aux utilisateurs de réserver facilement des trajets en TGV.
+                <br><br>
+                L'un des principaux défis rencontrés était la gestion complexe du système de réservation, incluant la disponibilité des places, les options personnalisées et le calendrier des prix variables. La mise en place d'une architecture robuste basée sur une base de données relationnelle a été cruciale pour assurer la fiabilité du système.
+                <br><br>
+                La gestion des options personnalisées (place tranquille, prise électrique, bagages supplémentaires) et l'implémentation du système de tarification dynamique ont également représenté des défis techniques importants.
+                <br><br>
+                L'interface utilisateur a été conçue pour offrir une expérience fluide et intuitive, en mettant l'accent sur la visualisation claire du panier d'achat et la simplicité du processus de paiement.
+                <br><br>
+                Malgré ces défis techniques, une approche méthodique et centrée sur l'utilisateur nous a permis de développer une application complète répondant aux exigences spécifiées par le Product Owner, offrant ainsi une alternative compétitive aux plateformes existantes.</p>
+        </section>
+    
+        <div class="slideshow">
+            <img id="mainImage" src="../../assets/snchess/Train1.png" alt="Image principale">
+        </div>
+    
+        <div class="thumbnails">
+            <img src="../../assets/snchess/Train1.png" alt="Page d'accueil" onclick="changeImage(this.src)">
+            <img src="../../assets/snchess/Train2.png" alt="Sélection des dates" onclick="changeImage(this.src)">
+            <img src="../../assets/snchess/Train3.png" alt="Calendrier des prix" onclick="changeImage(this.src)">
+            <img src="../../assets/snchess/Train4.png" alt="Options de voyage" onclick="changeImage(this.src)">
+            <img src="../../assets/snchess/Train5.png" alt="Récapitulatif et paiement" onclick="changeImage(this.src)">
+        </div>
+    
+        <script>
+            function changeImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
+    
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+    
+            const selectedThumbnail = Array.from(thumbnails).find(thumbnail => thumbnail.src === src);
+            selectedThumbnail.classList.add('active');
+        }
+    
+        </script>
+    </section>
+    
+
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li>
+            </ul>
+
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2024</p> </div>
+    </footer>
+
+</body>
+</html>

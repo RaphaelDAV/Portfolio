@@ -441,6 +441,7 @@ section.presentation {
 }
 
 .skills{
+    
     margin-right: 5%;
 }
 .skills h2 {
@@ -589,7 +590,7 @@ section.presentation {
     font-weight: bold;
     transition: color 0.3s ease;
     text-decoration: underline;
-
+    
 }
 
 .skill-item a:hover {
@@ -654,7 +655,6 @@ section.presentation {
 .experiences{
     background-color: #153B4B ;
     padding: 3%;
-    margin: 5%;
     margin-bottom: -2%;
     margin-top: 0%;
     width: 50%;
@@ -715,8 +715,10 @@ section.presentation {
 .big-flex{
     display: flex;
     margin-top: 5vw;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .skills h2{
@@ -817,14 +819,15 @@ section.presentation {
     align-items: center;
     background-color: #333;
     color: white;
-    
     overflow: hidden;
     max-height: 400px;
     transition: transform 0.3s ease; 
+    border-radius: 4px;
 }
 
 .projet:hover {
     transform: scale(1.02); 
+    border: 2px solid white;
 }
 
 .left-projet {
@@ -935,6 +938,19 @@ section.presentation {
 #bif::before{
     background-image: url('../assets/bif.png'); 
 }
+
+#snchess::before{
+    background-image: url('../assets/snchess.png'); 
+}
+
+#dual::before{
+    background-image: url('../assets/clavier.png'); 
+}
+
+#infrastructure::before{
+    background-image: url('../assets/infrastructure.png'); 
+}
+
 
 
 
@@ -1069,4 +1085,460 @@ footer {
     text-align: center;
     background-color: #FDF7F2;
     padding: 5px;
+}
+
+/*_______________Carrousel compétences BUT Info_____________*/
+
+.competences-but {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #14252C;
+}
+
+.competences-but h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.competences-but h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: #b15d3a;
+}
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.competence-card {
+    position: relative;
+    height: 220px;
+    perspective: 1000px;
+    
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.competence-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.competence-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    background-color: #1B1818;
+    
+}
+
+.competence-front h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.competence-card:hover .competence-front h3 {
+    transform: translateY(-15px);
+}
+
+.hover-info {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.competence-card:hover .hover-info {
+    opacity: 1;
+    transform: translateY(-5px);
+}
+
+.hover-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    margin: 0;
+    color: #909090;
+}
+
+.competence-link {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.competence-card:hover .competence-link {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+
+.competence-link:hover {
+    background-color: #555;
+}
+
+#realiser {
+    background: linear-gradient(to bottom, #fff 80%, rgba(183, 28, 28, 0.1) 100%);
+    border-left: 5px solid #b71c1c;
+}
+
+#optimiser {
+    background: linear-gradient(to bottom, #fff 80%, rgba(230, 81, 0, 0.1) 100%);
+    border-left: 5px solid #e65100;
+}
+
+#administrer {
+    background: linear-gradient(to bottom, #fff 80%, rgba(255, 214, 0, 0.1) 100%);
+    border-left: 5px solid #ffd600;
+}
+
+#gerer {
+    background: linear-gradient(to bottom, #fff 80%, rgba(139, 195, 74, 0.1) 100%);
+    border-left: 5px solid #8bc34a;
+}
+
+#conduire {
+    background: linear-gradient(to bottom, #fff 80%, rgba(26, 35, 126, 0.1) 100%);
+    border-left: 5px solid #1a237e;
+}
+
+#collaborer {
+    background: linear-gradient(to bottom, #fff 80%, rgba(74, 20, 140, 0.1) 100%);
+    border-left: 5px solid #4a148c;
+}
+
+@media (max-width: 992px) {
+    .competences-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .competence-card {
+        height: 200px;
+    }
+}
+
+/*_______________Animations_____________*/
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero .content h2 {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.hero .content h1 {
+    animation: fadeInUp 0.8s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.hero .content h3 {
+    animation: fadeInUp 0.8s ease 0.4s forwards;
+    opacity: 0;
+}
+
+.hero .content p {
+    animation: fadeInUp 0.8s ease 0.6s forwards;
+    opacity: 0;
+}
+
+.hero .content .cv-button {
+    animation: fadeInUp 0.8s ease 0.8s forwards;
+    opacity: 0;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav {
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+/* Animation pour les icônes sociales */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    70% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.socials a img {
+    animation: popIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.socials a:nth-child(1) img {
+    animation-delay: 0.3s;
+}
+
+.socials a:nth-child(2) img {
+    animation-delay: 0.5s;
+}
+
+.socials a:nth-child(3) img {
+    animation-delay: 0.7s;
+}
+
+@keyframes projectHover {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.projet:hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.projet:hover .logo {
+    animation: projectHover 2s ease infinite;
+}
+
+@keyframes tiltCard {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(10deg);
+    }
+}
+
+.competence-card {
+    transition: all 0.5s ease;
+}
+
+.competence-card:hover {
+    animation: tiltCard 0.5s ease forwards;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.presentation .profile-image img {
+    transition: all 0.5s ease;
+}
+
+.presentation .profile-image img:hover {
+    transform: scale(1.05);
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.hero .overlay {
+    animation: gradientBG 15s ease infinite;
+    background: linear-gradient(45deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+    background-size: 200% 200%;
+}
+
+/* Animation pour le survol des liens de navigation */
+@keyframes underlineGrow {
+    from {
+        width: 0;
+        left: 50%;
+    }
+    to {
+        width: 100%;
+        left: 0;
+    }
+}
+
+.nav-links li a {
+    position: relative;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+@keyframes skillLoad {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.skill-item {
+    animation: skillLoad 0.5s ease forwards;
+    opacity: 0;
+}
+
+.skills-grid .skill-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.skills-grid .skill-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.skills-grid .skill-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.skills-grid .skill-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.skills-grid .skill-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.skills-grid .skill-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+/* Animation de révélation au défilement */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation du bouton CV */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
+.cv-button {
+    animation: pulse 2s infinite;
+}
+
+/* Animation pour les passions */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.passion {
+    animation: bounceIn 0.6s ease forwards;
+    opacity: 0;
+}
+
+.passions .passion:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.passions .passion:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.passions .passion:nth-child(3) {
+    animation-delay: 0.6s;
 }

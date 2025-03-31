@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploration Algorithmique Graphes</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/projet.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/raphael-daviot/"><img src="../../assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RaphaelDAV?tab=repositories"><img src="../../assets/github-icon.png" alt="GitHub"></a>
+            <a href="https://www.instagram.com/raphaeldaviot/"><img src="../../assets/instagram-icon.png" alt="Instagram"></a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../../index.html">Accueil</a></li>
+            
+        </ul>
+        <div class="contact-button">
+            <a href="#">Contact</a>
+        </div>
+        <button class="burger-menu" onclick="toggleMenu()">☰</button>
+        <script>
+			function toggleMenu() {
+				const navLinks = document.querySelector('.nav-links');
+				navLinks.classList.toggle('show');
+
+				if (navLinks.classList.contains('show')) {
+					document.addEventListener('click', closeMenuOnClickOutside);
+				} else {
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+			function closeMenuOnClickOutside(event) {
+				const navLinks = document.querySelector('.nav-links');
+				const burgerMenu = document.querySelector('.burger-menu');
+
+				if (!navLinks.contains(event.target) && !burgerMenu.contains(event.target)) {
+					navLinks.classList.remove('show');
+					document.removeEventListener('click', closeMenuOnClickOutside);
+				}
+			}
+
+		</script>
+    </nav>
+    <section class="projet-description">
+        <section class="intro" id="graphes">
+            <h1>Exploration Algorithmique</h1>
+            <p>Implémentation d'algorithmes de théorie des automates</p>
+        </section>
+    
+        <section class="techno_lien">
+                <div class="techno">
+                    <h2>TECHNOLOGIES</h2>           
+                    <ul>Python</ul>
+                    <ul>Théorie des automates</ul>
+                    <ul>Graphes</ul>       
+                </div>
+                <div class="lien">
+                    <h2>LIEN</h2>
+                    <a href="https://github.com/RaphaelDAV/Automates-SAE">Github</a>
+                </div>    
+        </section>
+    
+        <section class="description">
+            <h1>Présentation du projet</h1>
+            <p>Ce projet d'Exploration Algorithmique représente une application approfondie des concepts et algorithmes fondamentaux de la théorie des automates. L'objectif principal était d'implémenter en Python un ensemble complet de fonctions permettant de manipuler et transformer des automates finis.
+                <br><br>
+                Le défi majeur de ce projet était la modélisation efficace des automates et l'implémentation rigoureuse des algorithmes de transformation associés. Nous avons représenté les automates sous forme de dictionnaires Python, avec des structures spécifiques pour les alphabets, états, transitions, états initiaux et terminaux.
+                <br><br>
+                Parmi les fonctionnalités développées, la déterminisation, la complémentation et la minimisation des automates ont constitué des défis techniques particulièrement stimulants. La gestion des automates produits pour calculer l'intersection et la différence de langages a également nécessité une approche méthodique et une maîtrise approfondie des concepts théoriques.
+                <br><br>
+                Un aspect essentiel de notre travail a été l'attention portée à l'efficacité algorithmique et à la conception modulaire du code. Chaque fonction a été soigneusement commentée et testée pour garantir sa conformité avec les spécifications du projet.
+                <br><br>
+                Ce projet a permis de mettre en pratique des concepts théoriques avancés dans un contexte d'application concrète, tout en développant des compétences essentielles en algorithmique et en programmation Python.</p>
+        </section>
+    
+        <div class="slideshow">
+            <img id="mainImage" src="../../assets/graphes/graphe1.png" alt="Image principale">
+        </div>
+    
+        <div class="thumbnails">
+            <img src="../../assets/graphes/graphe1.png" alt="Image 1" onclick="changeImage(this.src)">
+            <img src="../../assets/graphes/graphe2.png" alt="Image 2" onclick="changeImage(this.src)">
+            <img src="../../assets/graphes/graphe3.png" alt="Image 3" onclick="changeImage(this.src)">
+            <img src="../../assets/graphes/graphe4.png" alt="Image 4" onclick="changeImage(this.src)">
+        </div>
+    
+        <script>
+            function changeImage(src) {
+            const mainImage = document.getElementById('mainImage');
+            mainImage.src = src;
+    
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            thumbnails.forEach(thumbnail => thumbnail.classList.remove('active'));
+    
+            const selectedThumbnail = Array.from(thumbnails).find(thumbnail => thumbnail.src === src);
+            selectedThumbnail.classList.add('active');
+        }
+    
+        </script>
+    </section>
+    
+
+    <footer> 
+        <div class="big-footer">
+            <ul class="footer-links">
+                <li><a href="../../index.html#accueil">Accueil</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#a-propos">À propos de moi</a></li> <div class="nav-separator">|</div>
+                <li><a href="../../index.html#portfolio">Portfolio</a></li>
+            </ul>
+
+            <ul class="logo-links">
+                <a href="tel:0769817638"><img class="logo-footer" src="../../assets/phone-icon.png"></a>
+                <a href="https://www.linkedin.com/in/raphael-daviot"><img class="logo-footer" src="../../assets/linkedin-icon.png"></a>
+                <a href="https://github.com/RaphaelDAV?tab=repositories"><img class="logo-footer" src="../../assets/github-icon.png"></a>
+                <a href="https://www.instagram.com/raphaeldaviot/"><img class="logo-footer" src="../../assets/instagram-icon.png"></a>
+                <a href="mailto:daviotraphael@gmail.com"><img class="logo-footer" src="../../assets/mail-icon.png"></a>
+            </ul>
+        </div>
+        
+        <div class="small-footer"><p>© Raphael DAVIOT 2024</p> </div>
+    </footer>
+
+</body>
+</html>

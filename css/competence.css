@@ -1,0 +1,427 @@
+.competence-header {
+    position: relative;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.competence-header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.competence-header .content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
+
+.competence-header h1 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.competence-header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.back-button {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.back-button:hover {
+    color: #ccc;
+}
+
+/* Headers spécifiques par compétence */
+.realiser-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/realiser-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #b71c1d;
+}
+
+.optimiser-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/optimiser-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #e65100;
+}
+
+.administrer-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/administrer-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #ffd600;
+}
+
+.gerer-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/gerer-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #8bc34a;
+}
+
+.conduire-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/conduire-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #1a237e;
+}
+
+.collaborer-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/competences/collaborer-bg.jpg') center/cover no-repeat;
+    border-bottom: 10px solid #4a148c;
+}
+
+/* Conteneur commun */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Sections communes */
+.competence-description,
+.competence-skills,
+.competence-projects,
+.competence-reflection,
+.competence-evaluation,
+.competence-resources {
+    padding: 4rem 0;
+}
+
+.competence-description {
+    background-color: #fff;
+}
+
+.competence-skills {
+    background-color: #f9f9f9;
+}
+
+.competence-projects {
+    background-color: #fff;
+}
+
+.competence-reflection {
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.competence-reflection::before {
+    content: '"';
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    font-size: 8rem;
+    color: rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif;
+}
+
+.competence-evaluation {
+    background-color: #fff;
+}
+
+.competence-resources {
+    background-color: #f9f9f9;
+}
+
+/* Titres de section */
+.competence-description h2,
+.competence-skills h2,
+.competence-projects h2,
+.competence-reflection h2,
+.competence-evaluation h2,
+.competence-resources h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.competence-description h2::after,
+.competence-skills h2::after,
+.competence-projects h2::after,
+.competence-reflection h2::after,
+.competence-evaluation h2::after,
+.competence-resources h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #B6410F;
+    margin: 0.8rem auto 2rem;
+}
+
+/* Détails de la compétence */
+
+.competence-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.detail-item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.detail-item p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+.detail-item ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.detail-item li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Grille de compétences */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.skill-category h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-left: 4px solid #B6410F;
+    padding-left: 1rem;
+}
+
+.skill-category ul {
+    padding-left: 1.5rem;
+}
+
+.skill-category li {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+/* Projets */
+
+.competence-projects{
+    color: white;
+    background-color: #111;
+}
+
+.competence-projects h2{
+    color: white;
+}
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+}
+
+.left-projet ul {
+    padding-left: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 10px;
+}
+
+.left-projet h4{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: "Josefin Sans", sans-serif;
+}
+.left-projet li {
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 0.8;
+    margin-bottom: 0.2rem;
+    color: #ffffff;
+}
+
+/* Réflexion personnelle */
+.competence-reflection{
+    background-color: #FDF7F2;
+}
+.reflection-content {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.reflection-content p {
+    margin-bottom: 1.5rem;
+}
+
+/* Évaluation et progression */
+.competence-evaluation{
+    background-color: #1B1818;
+
+}
+.evaluation-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.progress-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #111;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-value {
+    height: 100%;
+    background-color: #B6410F;
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.evaluation-details {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #c2c1c1;
+}
+.competence-evaluation h2{
+    color: white;
+}
+.evaluation-details p {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.evaluation-details ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.evaluation-details li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .competence-details,
+    .skills-grid,
+    .resources-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .evaluation-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .competence-header h1 {
+        font-size: 2.8rem;
+    }
+    
+    .competence-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .competence-details,
+    .skills-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        flex-direction: column;
+    }
+    
+    .project-image {
+        flex: 0 0 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .competence-header {
+        height: 250px;
+    }
+    
+    .competence-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .competence-header h2 {
+        font-size: 1rem;
+    }
+    
+    .back-button {
+        top: 1rem;
+        left: 1rem;
+    }
+    
+    .competence-description h2,
+    .competence-skills h2,
+    .competence-projects h2,
+    .competence-reflection h2,
+    .competence-evaluation h2,
+    .competence-resources h2 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .competence-description,
+    .competence-skills,
+    .competence-projects,
+    .competence-reflection,
+    .competence-evaluation,
+    .competence-resources {
+        padding: 3rem 0;
+    }
+}
