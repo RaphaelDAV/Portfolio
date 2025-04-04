@@ -1196,10 +1196,6 @@ footer {
     transition: all 0.3s ease;
 }
 
-.competence-card:hover .competence-link {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-}
 
 .competence-link:hover {
     background-color: #555;
