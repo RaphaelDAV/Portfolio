@@ -24,6 +24,10 @@ body {
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); 
 }
 
+#wikirace{
+    background-image: url(../assets/wikirace.png);
+}
+
 #codex{
     background-image: url('../assets/codex.png'); 
 }

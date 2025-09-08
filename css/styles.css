@@ -909,6 +909,10 @@ section.presentation {
     z-index: 1;
 }
 
+#wikirace::before{
+    background-image: url('../assets/wikirace.png'); 
+}
+
 #codex::before{
     background-image: url('../assets/codex.png'); 
 }
